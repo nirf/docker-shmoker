@@ -14,9 +14,3 @@ export class ResourceDto {
     })
     something: string
 }
-
-// tslint:disable-next-line:max-classes-per-file
-export class Resource {
-    id: number
-    something: string
-}
