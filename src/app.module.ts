@@ -1,7 +1,7 @@
 import {Module} from '@nestjs/common'
 import {TypeOrmModule} from '@nestjs/typeorm'
-import {Resource} from './modules/user/entities/resource.entity'
-import {ResourcesModule} from './modules/user/resources.module'
+import {Resource} from './modules/resources/entities/resource.entity'
+import {ResourcesModule} from './modules/resources/resources.module'
 
 @Module({
     imports: [
