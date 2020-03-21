@@ -15,7 +15,7 @@ export class ResourcesController {
         const resource = await this.resourcesService.getResourceById(id)
         return {
             err: 0,
-            msg: 'say hello to my little friend',
+            msg: 'found',
             data: resource
         }
     }
