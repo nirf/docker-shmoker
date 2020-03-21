@@ -1,7 +1,7 @@
 # description
-running 2 app servers on different host
-the db is in one
-communicate them by docker network: bridge(inter host communication), overlay(outer host communication)
+running 2 app servers on different host  <br/>
+the db is in one  <br/>
+communicate them by docker network: bridge(inter host communication), overlay(outer host communication) <br/>
 
 # node-0
 sudo apt install docker.io <br/>
@@ -27,7 +27,7 @@ docker run --net=int-host -d -p 80:3000 --name resource-service nirf/resource-se
 goto: http://ec2-52-58-119-26.eu-central-1.compute.amazonaws.com/api/swagger/<br/>
 
 ## adding overlay network using swarm
-## crete the swarm master node (from node-0 using its ip address)
+## create the swarm master node (from node-0 using its ip address)
 docker swarm init --advertise-addr=172.31.16.245 (private ip) </br>
 
 Overlay Network Creation on Node 1 <br/>
